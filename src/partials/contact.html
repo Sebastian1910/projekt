@@ -1,0 +1,59 @@
+<!-- Modal1 Contact US-->
+<div class="is-hidden backdrop" contact-data-modal>
+  <div class="modal">
+    <button type="button" class="close-btn" contact-modal-close>
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15 3L3 15M15 15L3 3L15 15Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+    <div class="modal-center">
+      <h2 class="modal-h2">Contact us</h2>
+      <p class="modal-text">
+        If you have any additional questions or you want to clarify something before you make an
+        order please fill in your contact details. We will call you back.
+      </p>
+      <form id="contact-form">
+        <div class="modal-label">
+          <label class="modal-name" for="user-name"> Name </label>
+          <div>
+            <input
+              class="modal-input"
+              id="user-name"
+              name="user-name"
+              type="text"
+              placeholder="Your name"
+              required
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              title="Username must be two words separated by space."
+            />
+          </div>
+        </div>
+        <div class="modal-label modal-break">
+          <label class="modal-name form-label" for="email"> Email </label>
+          <div>
+            <input
+              class="modal-input"
+              id="email"
+              name="email"
+              type="text"
+              placeholder="Your email"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" class="modal-button">Send</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,140 @@
+:root {
+  --pink: #e86f54;
+  --pink-alt: #e25b41;
+  --black: #000000;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  display: flex;
+}
+.section-blog {
+  padding: 60px 0;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.container-blog {
+  padding: 0 16px;
+  max-width: 480px;
+}
+.section-blog-list {
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.arrows-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+.list-item-blog {
+  width: calc((100% - 32px) / 2);
+  list-style: none;
+  list-style: none;
+}
+.follow-text {
+  color: var(--black);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.section-title-blog {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 24px; /* 133.333% */
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.btn-subscribe {
+  height: 40px;
+  min-width: 170px;
+  border-radius: 38px;
+  background: var(--pink);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-subscribe:hover {
+  background-color: var(--pink-alt);
+  box-shadow: 0 4px 16px #fa6f5433;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+.mobile-hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .section-title-blog {
+    font-size: 44px;
+  }
+  .container-blog {
+    max-width: 720px;
+    width: 100%;
+  }
+  .follow-text {
+    font-size: 32px;
+  }
+  .btn-subscribe {
+    min-width: 280px;
+    height: 64px;
+  }
+  .btn {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mobile-hidden {
+    display: block;
+  }
+  .container-blog {
+    max-width: 1232px;
+    width: 100%;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .follow-text {
+    font-size: 32px;
+  }
+  .btn-subscribe {
+    min-width: 280px;
+    height: 64px;
+  }
+  .btn {
+    font-size: 28px;
+  }
+}

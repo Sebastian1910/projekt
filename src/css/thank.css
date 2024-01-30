@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --pink: #e86f54;
+  --pink-hover: #e25b41;
+  --pink-focus: #fa6f54;
+  --red: #e74a3b;
+  --green: #3cbc81;
+  --border: #d7d7d7;
+  --border-hover: #111111b2;
+  --black: #000;
+  --gray: #5c5c5c;
+  --gray2: rgba(0, 0, 0, 0.4);
+  --white: #fff;
+}
+.backdrop {
+  padding: 90px 24px 24px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000004d;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-center {
+  padding: 28px 16px;
+}
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 272px;
+  width: 95%;
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-thank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  padding-top: 44px;
+}
+.modal-item-h2 {
+  padding-top: 16px;
+  color: var(--black);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.modal-item-p {
+  padding-top: 14px;
+  padding-bottom: 18px;
+  color: var(--gray);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.modal-form-thank {
+  padding-bottom: 32px;
+  width: 100%;
+}
+.svg-thank {
+  width: 100%;
+  height: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .modal-center {
+    padding: 48px 32px;
+  }
+  .close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .modal {
+    max-width: 480px;
+  }
+  .modal-thank {
+    padding: 0 32px;
+    padding-top: 54px;
+  }
+  .modal-item-h2 {
+    font-size: 32px;
+  }
+  .modal-item-p {
+    padding-top: 16px;
+    padding-bottom: 34px;
+    font-size: 16px;
+  }
+  .modal-form-thank {
+    padding-bottom: 54px;
+  }
+  .box-svg-thank {
+    width: 367px;
+    height: 202px;
+  }
+}

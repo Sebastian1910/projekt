@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --pink: #e86f54;
+  --pink-hover: #e25b41;
+  --pink-focus: #fa6f54;
+  --red: #e74a3b;
+  --green: #3cbc81;
+  --border: #d7d7d7;
+  --border-hover: #111111b2;
+  --black: #000;
+  --gray: #5c5c5c;
+  --gray2: rgba(0, 0, 0, 0.4);
+  --white: #fff;
+}
+.backdrop {
+  padding: 90px 24px 24px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000004d;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-center-follow {
+  padding: 18px 16px 28px;
+}
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+}
+.modal-follow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 272px;
+  width: 95%;
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-follow-h2 {
+  color: var(--black);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.modal-follow-p {
+  padding-top: 14px;
+  padding-bottom: 18px;
+  color: var(--gray);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.modal-label-follow {
+  color: var(--gray);
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.modal-input-follow {
+  color: var(--gray2);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  height: 35px;
+  padding-left: 12px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  outline: none;
+}
+.modal-input-follow:hover {
+  border-color: var(--border-hover);
+  cursor: pointer;
+}
+.modal-input-follow:not(:placeholder-shown):required:valid:focus-within {
+  border-color: var(--green);
+}
+.modal-input-follow:not(:placeholder-shown):required:invalid {
+  border-color: var(--red);
+}
+.modal-button-follow {
+  color: var(--white);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  height: 37px;
+  display: flex;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--pink);
+  cursor: pointer;
+  border: none;
+}
+.modal-button:hover {
+  background: var(--pink-hover);
+}
+.modal-button:focus {
+  background: var(--pink-focus);
+  box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.2);
+}
+.modal-img {
+  max-width: 272px;
+  height: 112px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/tablet-mobile-modal-christie-kim.jpg);
+}
+.modal-follow-div-label {
+  padding-top: 8px;
+  padding-bottom: 18px;
+}
+.modal-fallow-item {
+  padding: 0 2px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .modal-follow {
+    max-width: 588px;
+  }
+  .modal-center-follow {
+    padding: 28px 118px 40px;
+  }
+  .close-btn {
+    top: 24px;
+    right: 24px;
+  }
+  .modal {
+    max-width: 588px;
+  }
+  .modal-follow-h2 {
+    font-size: 28px;
+  }
+  .modal-follow-p {
+    font-size: 16px;
+  }
+  .modal-label-follow {
+    font-size: 14px;
+  }
+  .modal-input-follow {
+    font-size: 14px;
+  }
+  .modal-button {
+    padding: 15px 0;
+    font-size: 18px;
+  }
+  .modal-follow-div-label {
+    padding-bottom: 28px;
+  }
+  .modal-img {
+    max-width: 588px;
+    height: 271px;
+  }
+  .modal-fallow-item {
+    padding: 0 8px;
+  }
+}
+
+/* laptpo */
+@media (min-width: 1200px) {
+  .modal-follow {
+    max-width: 860px;
+    display: flex;
+  }
+  .follow-desktop {
+    display: flex;
+  }
+  .modal-img {
+    width: 428px;
+    height: 528px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/desktop-modal-christie-kim.jpg);
+  }
+  .modal-center-follow {
+    max-width: 432px;
+    padding: 111px 40px;
+  }
+  .modal-follow-p {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+}

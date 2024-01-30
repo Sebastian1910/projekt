@@ -1,0 +1,128 @@
+body {
+  font-family: 'Montserrat';
+  color: black;
+  background: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+.section_about {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.container_about {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.h2_text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+.line {
+  border-bottom: 1px solid black;
+  flex-grow: 1;
+}
+
+.list_about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about_text {
+  padding-top: 32px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+@media (min-width: 768px) {
+  .section_about {
+    padding-bottom: 100px;
+  }
+  .container_about {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .h2_text {
+    font-size: 44px;
+    gap: 16px;
+    padding-bottom: 30px;
+  }
+
+  .list_about {
+    flex-direction: row;
+    align-items: center;
+    gap: 54px;
+  }
+
+  .about_text {
+    width: 100%;
+    max-width: 322px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px;
+  }
+  .item_images {
+    width: 344px;
+    height: auto;
+    border-radius: 0px 639.5px 639.5px 0px;
+    background: lightgray -16.343px -16px / 104.771% 110.84% no-repeat;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container_about {
+    width: 100%;
+    max-width: 1232px;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .h2_text {
+    padding-bottom: 26px;
+  }
+
+  .list_about {
+    gap: 90px;
+  }
+
+  .about_text {
+    width: 100%;
+    max-width: 510px;
+    font-size: 22px;
+    padding: 0px;
+  }
+
+  .item_images {
+    width: 632px;
+    height: auto;
+    border-radius: 0px 639.5px 639.5px 0px;
+    background: lightgray -16.343px -16px / 104.771% 110.84% no-repeat;
+  }
+}
