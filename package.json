@@ -1,0 +1,25 @@
+{
+  "name": "parcel-project-template",
+  "version": "1.1.0",
+  "description": "",
+  "homepage": "https://An9ta.github.io/team-project-flower",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /team-project-flower/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/An9ta/team-project-flower.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/migace/parcel-project-template-pl-main/issues"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "posthtml-include": "^1.7.4"
+  }
+}
